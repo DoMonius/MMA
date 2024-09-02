@@ -7,10 +7,48 @@
     <title>Athletes</title>
     <linkrel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        button {
+            color:red;
+            font-size: 20px;
+        }
+        .image-slider{
+            position: relative;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .image-slider img{
+            width: 100%;
+            display: none;
+        }
+        img.displaySlide{
+            display: block;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        .image-slider button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            padding: 10px 15px;
+            background-color: hsl(0,0%,0%,0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+        @keyframes fade {
+            from {opacity: 0.5;}
+            to {opacity: 1;}
         }
        
        
@@ -26,10 +64,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="fighters.html">Fighters</a></li>
-                <li><a href="#hightlights">Hightlights</a></li>
-                <li><a href="#clubs">Clubs</a></li>
-                <li><a href="#fans">News-lettter</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="hightlights.html">Hightlights</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="news.html">News-lettter</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
         <div class="search">
@@ -41,49 +79,16 @@
     </nav>
 
     <main>
-
-        <section id="current-fighters" class="hidden">
-            <h2>All Active fighters</h2>
-            <div class="champions">
-                <img src="images/figher.jpg" alt="images of chamions">
-                <p>All current champs in a slider</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptates maxime eum placeat porro de</p>
+        <div class="image-slider">
+            <div class="slides">
+                <img class="slide" src="images/event.jpg" alt="image #1">
+                <img class="slide" src="images/image-2.jpg" alt="image #2">
+                <img class="slide" src="images/image1.jpg" alt="image #3">
+                <img class="slide" src="images/bones.jpeg" alt="image #4">
             </div>
-            <div class="current-fighters">
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 1">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 2">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 3">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 4">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 1">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 2">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 3">
-                    <p>Fighter Name</p>
-                </div>
-                <div class="fighter-image">
-                    <img src="images/conor mcgregor.jpeg" alt="Fighter 4">
-                    <p>Fighter Name</p>
-                </div>
-            </div>
-        </section>
+            <button class="prev" onclick = "prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
