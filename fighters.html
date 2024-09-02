@@ -6,53 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Athletes</title>
     <linkrel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-        button {
-            color:red;
-            font-size: 20px;
-        }
-        .image-slider{
-            position: relative;
-            width: 100%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .image-slider img{
-            width: 100%;
-            display: none;
-        }
-        img.displaySlide{
-            display: block;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        
-        .image-slider button{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2rem;
-            padding: 10px 15px;
-            background-color: hsl(0,0%,0%,0.5);
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .prev {
-            left: 0;
-        }
-        .next {
-            right: 0;
-        }
-        @keyframes fade {
-            from {opacity: 0.5;}
-            to {opacity: 1;}
-        }
-       
-       
-    </style>
 </head>
 <body>
     <div class="header">
@@ -81,13 +34,23 @@
     <main>
         <div class="image-slider">
             <div class="slides">
+                <div class="slides-fade">
+                    <img class="slide" src="images/event.jpg" alt="image #1">
+                    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid pariatur, est quisquam voluptatibus quae laudan</div>
+                </div>
                 <img class="slide" src="images/event.jpg" alt="image #1">
                 <img class="slide" src="images/image-2.jpg" alt="image #2">
                 <img class="slide" src="images/image1.jpg" alt="image #3">
-                <img class="slide" src="images/bones.jpeg" alt="image #4">
+                <img class="slide" src="images/figher.jpg" alt="image #4">
             </div>
             <button class="prev" onclick = "prevSlide()">&#10094</button>
             <button class="next" onclick="nextSlide()">&#10095</button>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
