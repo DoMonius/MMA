@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LSON - MMA</title>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="header">
+            <div class="logo">LSON-Mixed Martial Arts</div>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="fighters.html">Fighters</a></li>
+                    <li><a href="hightlights.html">Hightlights</a></li>
+                    <li><a href="clubs.hmtl">Clubs</a></li>
+                    <li><a href="news.html">News-lettter</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="search">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to MMA Namibia</h1>
+            <p>Your source for all things MMA in Namibia!</p>
+            <a href="#events" class="button">Upcoming Events</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="fighters" class="hidden">
+            <h2>Featured Fighters</h2>
+            <div class="featured-fighters">
+                <div class="fighter-image">
+                    <img src="images/conor mcgregor.jpeg" alt="Fighter 1">
+                    <p><a href="">Fighter Name</a></p>
+                </div>
+                <div class="fighter-image">
+                    <img src="images/conor mcgregor.jpeg" alt="Fighter 2">
+                    <p><a href="">Fighter Name</a></p>
+                </div>
+                <div class="fighter-image">
+                    <img src="images/conor mcgregor.jpeg" alt="Fighter 3">
+                    <p><a href="">Fighter Name</a></p>
+                </div>
+                <div class="fighter-image">
+                    <img src="images/conor mcgregor.jpeg" alt="Fighter 4">
+                    <p><a href="">Fighter Name</a></p>
+                </div>
+            </div>
+        </section>
+
+     <section id="results" class=".hidden">
+        <h2>Past Events</h2>
+        <div class="past-events">
+            <div class="past-events-grid">
+                <div class="event-card">
+                    <h4>Namibian Warriors</h4>
+                    <img src="images/event.jpg" alt="Namibian Warriors">
+                    <p><strong>Date:</strong> July 10, 2024</p>
+                    <p><strong>Location:</strong> Oshakati Stadium</p>
+                    <p><strong>Main Event:</strong> Alex Nunes def. Chris Parker</p>
+                    <a href="watch.php?event=namibian-warriors" class="btn">Watch Replay</a>
+                    <a href="event-details.php?event=namibian-warriors" class="btn btn-info">More Info</a>
+                </div>
+                <div class="event-card">
+                    <h4>Capital City Showdown</h4>
+                    <img src="images/event.jpg" alt="Capital City Showdown">
+                    <p><strong>Date:</strong> May 22, 2024</p>
+                    <p><strong>Location:</strong> Independence Arena, Windhoek</p>
+                    <p><strong>Main Event:</strong> Maria Santos def. Lena Johnson</p>
+                    <a href="watch.php?event=capital-city-showdown" class="btn">Watch Replay</a>
+                    <a href="event-details.php?event=capital-city-showdown" class="btn btn-info">More Info</a>
+                </div>
+                <div class="event-card">
+                    <h4>Kalahari Knockout</h4>
+                    <img src="images/event.jpg" alt="Kalahari Knockout">
+                    <p><strong>Date:</strong> March 8, 2024</p>
+                    <p><strong>Location:</strong> Gobabis Sports Complex</p>
+                    <p><strong>Main Event:</strong> David Muller def. Hassan Ali</p>
+                    <a href="watch.php?event=kalahari-knockout" class="btn">Watch Replay</a>
+                    <a href="event-details.php?event=kalahari-knockout" class="btn btn-info">More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MMA Namibia. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>

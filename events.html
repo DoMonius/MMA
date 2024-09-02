@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSON-Mixed Martial Arts - Events</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h2 {
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 0.5rem;
+        }
+        .events-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .main-event {
+            width: 60%;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .other-events {
+            width: 35%;
+        }
+        .event-card {
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .current-events, .how-to-watch, .past-events {
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .past-events-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #8b0000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-right: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #a50000;
+        }
+        .btn-info {
+            background-color: #ffd700;
+            color: #000000;
+        }
+        .btn-info:hover {
+            background-color: #ffea00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">LSON-Mixed Martial Arts</div>
+    </div>
+    <nav>
+        <div class="nav-links">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="fighters.html">Fighters</a></li>
+                <li><a href="#hightlights">Hightlights</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#fans">News-lettter</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="text" placeholder="search">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <h2>Upcoming Events</h2>
+        <div class="events-container">
+            <div class="main-event">
+                <h3>Main Event: Battle of Windhoek</h3>
+                <img src="images/event.jpg" alt="Main Event: Battle of Windhoek">
+                <p><strong>Date:</strong> September 15, 2024</p>
+                <p><strong>Location:</strong> Windhoek Stadium, Windhoek, Namibia</p>
+                <p><strong>Main Card:</strong></p>
+                <ul>
+                    <li>John Doe vs Jane Smith - Heavyweight Championship</li>
+                    <li>Mike Johnson vs Sarah Williams - Featherweight Bout</li>
+                    <li>Tom Brown vs Lisa Green - Lightweight Bout</li>
+                </ul>
+                <a href="watch.php?event=battle-of-windhoek" class="btn">Watch Live</a>
+                <a href="event-details.php?event=battle-of-windhoek" class="btn btn-info">More Info</a>
+            </div>
+            <div class="other-events">
+                <div class="event-card">
+                    <h4>Coastal Clash</h4>
+                    <img src="images/event.jpg" alt="Coastal Clash">
+                    <p><strong>Date:</strong> October 5, 2024</p>
+                    <p><strong>Location:</strong> Swakopmund Arena</p>
+                    <a href="watch.php?event=coastal-clash" class="btn">Watch Live</a>
+                    <a href="event-details.php?event=coastal-clash" class="btn btn-info">More Info</a>
+                </div>
+                <div class="event-card">
+                    <h4>Desert Showdown</h4>
+                    <img src="images/event.jpg" alt="Desert Showdown">
+                    <p><strong>Date:</strong> November 20, 2024</p>
+                    <p><strong>Location:</strong> Namib Desert Lodge</p>
+                    <a href="watch.php?event=desert-showdown" class="btn">Watch Live</a>
+                    <a href="event-details.php?event=desert-showdown" class="btn btn-info">More Info</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="current-events">
+            <h2>Current Events</h2>
+            <p>There are no ongoing events at the moment. Check back soon for live updates during our next event!</p>
+            <a href="watch.php?event=live-event" class="btn">Watch Now</a>
+        </div>
+        
+        <div class="how-to-watch">
+            <h2>How to Watch</h2>
+            <p>You can catch all the action from LSON-Mixed Martial Arts through the following channels:</p>
+            <ul>
+                <li><strong>Television:</strong> NBC Sports Namibia</li>
+                <li><strong>Streaming:</strong> LSONMMA.com/live</li>
+                <li><strong>Mobile App:</strong> Download our official app for iOS and Android</li>
+            </ul>
+            <p>For international viewers, please check your local listings or visit our website for more information on global broadcast partners.</p>
+        </div>
+
+        <div class="past-events">
+            <h2>Past Events</h2>
+            <div class="past-events-grid">
+                <div class="event-card">
+                    <h4>Namibian Warriors</h4>
+                    <img src="images/event.jpg" alt="Namibian Warriors">
+                    <p><strong>Date:</strong> July 10, 2024</p>
+                    <p><strong>Location:</strong> Oshakati Stadium</p>
+                    <p><strong>Main Event:</strong> Alex Nunes def. Chris Parker</p>
+                    <a href="watch.php?event=namibian-warriors" class="btn">Watch Replay</a>
+                    <a href="event-details.php?event=namibian-warriors" class="btn btn-info">More Info</a>
+                </div>
+                <div class="event-card">
+                    <h4>Capital City Showdown</h4>
+                    <img src="images/event.jpg" alt="Capital City Showdown">
+                    <p><strong>Date:</strong> May 22, 2024</p>
+                    <p><strong>Location:</strong> Independence Arena, Windhoek</p>
+                    <p><strong>Main Event:</strong> Maria Santos def. Lena Johnson</p>
+                    <a href="watch.php?event=capital-city-showdown" class="btn">Watch Replay</a>
+                    <a href="event-details.php?event=capital-city-showdown" class="btn btn-info">More Info</a>
+                </div>
+                <div class="event-card">
+                    <h4>Kalahari Knockout</h4>
+                    <img src="images/event.jpg" alt="Kalahari Knockout">
+                    <p><strong>Date:</strong> March 8, 2024</p>
+                    <p><strong>Location:</strong> Gobabis Sports Complex</p>
+                    <p><strong>Main Event:</strong> David Muller def. Hassan Ali</p>
+                    <a href="watch.php?event=kalahari-knockout" class="btn">Watch Replay</a>
+                    <a href="event-details.php?event=kalahari-knockout" class="btn btn-info">More Info</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MMA Namibia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
