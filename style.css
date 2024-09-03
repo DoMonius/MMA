@@ -10,19 +10,15 @@
     flex-wrap: wrap;
 }
 body {
-    
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: auto;
+    color: #ffffff;
 }
 
 
 main {
-    max-width: 1700px;
+    max-width: 1200px;
     min-width: 1300px;
     margin: 0 auto;
     padding: 2rem;
@@ -156,8 +152,6 @@ a {
     background-color: #c73610;
 }
 
-/* Fighters  */
-
 .featured-fighters, .current-fighters {
     display: flex;
     padding: 30px;
@@ -191,10 +185,18 @@ h2 {
     padding-bottom: 0.5rem;
     margin-bottom: 20px;
 }
+/* Events */
 .events-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+}
+.main-event {
+    width: 60%;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .other-events {
@@ -207,7 +209,7 @@ h2 {
     margin-bottom: 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.current-events, .fighters {
+.current-events, .how-to-watch, .past-events, .fighters {
     background-color: #2a2a2a;
     border-radius: 5px;
     padding: 1rem;
