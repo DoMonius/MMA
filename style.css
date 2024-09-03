@@ -186,12 +186,12 @@ h2 {
     margin-bottom: 20px;
 }
 /* Events */
-.events-container {
+.events-container,.videos-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-.main-event {
+.main-event, .main-videos {
     width: 60%;
     background-color: #2a2a2a;
     border-radius: 5px;
@@ -199,10 +199,10 @@ h2 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.other-events {
+.other-events,.side-videos {
     width: 35%;
 }
-.event-card, .fighter-image {
+.event-card, .fighter-image, .sidevideo-card {
     background-color: #2a2a2a;
     border-radius: 5px;
     padding: 1rem;
@@ -386,4 +386,12 @@ img.displaySlide{
     transform: rotateY(180deg);
     padding: 20px;
     padding-bottom: 60px;
+  }
+
+  /* Highlights */
+
+  .sidevideo-card{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
   }
