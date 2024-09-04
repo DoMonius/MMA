@@ -186,7 +186,7 @@ h2 {
     margin-bottom: 20px;
 }
 /* Events */
-.events-container,.videos-container,.all-clubs {
+.events-container,.videos-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -412,15 +412,18 @@ img.displaySlide{
 
   .club{
     display: flex;
+    align-items: flex-start; 
     width: 100%;
     background-color: #2a2a2a;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
   }
 
   .club-img{
     display: flex;
+    box-sizing: border-box;
     width: 40%;
     background-color: #2a2a2a;
     border-radius: 5px;
@@ -439,3 +442,36 @@ img.displaySlide{
     font-weight: 800;
     color: yellow;
   }
+  .club-info{
+    width: 60%;
+    padding: 20px 30px ;
+  }
+  .club-socials {
+    background-color:transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    border: 2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-top: auto;
+    transition: .5s ease;
+}
+
+#facebook {
+    color: blue;
+}
+#instagram {
+    color: #f09433;
+}
+#whatsapp{
+    color: green;
+}
+.club-socials a:hover {
+    background: var(--main-color);
+    color: var(--snd-bf-coloer);
+    box-shadow: 0 0 1rem var(--main-color);
+}
