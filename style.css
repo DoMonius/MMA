@@ -186,7 +186,7 @@ h2 {
     margin-bottom: 20px;
 }
 /* Events */
-.events-container,.videos-container {
+.events-container,.videos-container,.all-clubs {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -389,9 +389,53 @@ img.displaySlide{
   }
 
   /* Highlights */
-
   .sidevideo-card{
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 20vh;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .sidevideo-card .side-video{
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    height: 100%;
+  }
+  .other-videos {
+    margin-top: 40px;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .club{
+    display: flex;
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .club-img{
+    display: flex;
+    width: 40%;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    gap: 10px;
+  }
+  .club-heading{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .club-name{
+    font-size: 25px;
+    font-weight: 800;
+    color: yellow;
   }
