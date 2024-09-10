@@ -117,7 +117,7 @@ a {
     text-shadow: 6px 6px 6px rgba(0,0,0,0.5);
 }
 .hero {
-    background-image: url("/images/image-2.jpg");
+    background-image: url(images/image-2.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -474,4 +474,40 @@ img.displaySlide{
     background: var(--main-color);
     color: var(--snd-bf-coloer);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Athlete information */
+.info-container{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    height: 80%;
+}
+.athlete-img{
+    height: 100%;
+    width: 40%;
+}
+.fighter-info-conatiner{
+    margin-left: 0;
+    width: 60%;
+    background-color: #514d4d;
+    display: flex;
+    padding: 30px;
+}
+.athlete-infor{
+    display: flex;
+    gap: 20px;
+}
+
+.athlete-infor h1{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    width: 100%;
+    font-size: 4rem;
+}
+
+.fighter-data{
+    display: flex;
+    justify-content: space-around;
 }
